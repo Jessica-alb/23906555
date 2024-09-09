@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    
+    float preco_acao1 = 24.13;
+    float preco_acao2 = 11.00;
+    float preco_acao3 = 38.65;
+
+    float dividendo_acao1 = 17.00;
+    float dividendo_acao2 = 35.00;
+    float dividendo_acao3 = 25.00;
+
+    float valor_total = 1000.00;
+
+    int qtd_acao1 = valor_total / preco_acao1;
+    int qtd_acao2 = valor_total / preco_acao2;
+    int qtd_acao3 = valor_total / preco_acao3;
+
+    float dy_acao1 = (dividendo_acao1 / preco_acao1) * 100;
+    float dy_acao2 = (dividendo_acao2 / preco_acao2) * 100;
+    float dy_acao3 = (dividendo_acao3 / preco_acao3) * 100;
+
+    printf("Você pode comprar:\n");
+    printf("%d unidades da Ação 1 a R$%.2f/unidade\n", qtd_acao1, preco_acao1);
+    printf("%d unidades da Ação 2 a R$%.2f/unidade\n", qtd_acao2, preco_acao2);
+    printf("%d unidades da Ação 3 a R$%.2f/unidade\n\n", qtd_acao3, preco_acao3);
+
+    printf("O Dividend Yield de cada ação é:\n");
+    printf("Ação 1: %.2f%%\n", dy_acao1);
+    printf("Ação 2: %.2f%%\n", dy_acao2);
+    printf("Ação 3: %.2f%%\n", dy_acao3);
+
+    return 0;
+}
