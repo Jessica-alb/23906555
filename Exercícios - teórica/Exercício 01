@@ -1,0 +1,61 @@
+A)
+Erros:
+1. Muito espaço na inclusão da biblioteca;
+2. O valor 4000000000 é muito grande para o armazenamento "int" padrão.
+
+Correção:
+#include <stdio.h>
+int main() {
+    unsigned int n = 4000000000;
+    printf("%d\n", n);
+    return 0;
+}
+
+B)
+Erros:
+1. A utilização da variável "a" antes de ser declarada;
+2. Muito espaço na inclusão da biblioteca.
+
+Correção:
+#include <stdio.h>
+int main() {
+    int a;
+    printf("%d\n", a);
+    return 0;
+}
+
+C)
+Erro:
+1. Muito espaço na inclusão da biblioteca e na formatação.
+
+Correção:
+#include <stdio.h>
+int main() {
+    printf("%d", 4);
+    printf("%d", 2);
+    return 0;
+}
+
+D)
+Erros:
+1. Falta de "&" antes da variável "a" em "scanf"
+2. Muito espaço na formatação
+
+Correção:
+#include <stdio.h>
+int main() {
+    int a;
+    scanf("%d", &a);
+    printf("%d", a);
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
