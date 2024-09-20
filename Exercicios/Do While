@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int palpite;
+
+
+    do {
+        printf("Adivinhe o número entre 1 e 10: ");
+        scanf("%d", &palpite);
+
+
+        if (palpite < 1 || palpite > 10) {
+            printf("Por favor, digite um número entre 1 e 10.\n");
+        } else if (palpite < 7) {
+            printf("Muito baixo! Tente novamente.\n");
+        } else if (palpite > 7) {
+            printf("Muito alto! Tente novamente.\n");
+        }
+
+    } while (palpite != 7);
+
+    printf("Parabéns! Você acertou o número 7.\n");
+    return 0;
+}
