@@ -1,0 +1,62 @@
+#include <stdio.h>
+
+int main() {
+
+    printf("Números de 1 a 50:\n");
+    for (int i = 1; i <= 50; i++) {
+        printf("%d\n", i);
+    }
+
+
+    printf("\nNúmeros de 50 a 1:\n");
+    for (int i = 50; i >= 1; i--) {
+        printf("%d\n", i);
+    }
+
+
+    int numAlunos;
+    printf("\nQuantos alunos a turma possui? ");
+    scanf("%d", &numAlunos);
+
+    for (int i = 1; i <= numAlunos; i++) {
+        float nota1, nota2, media;
+        printf("Digite a nota 1 do aluno %d: ", i);
+        scanf("%f", &nota1);
+        printf("Digite a nota 2 do aluno %d: ", i);
+        scanf("%f", &nota2);
+
+        media = (nota1 + nota2) / 2;
+        printf("Média do aluno %d: %.2f\n", i, media);
+
+        if (media >= 7.0) {
+            printf("Aluno %d: Aprovado\n", i);
+        } else {
+            printf("Aluno %d: Reprovado\n", i);
+        }
+    }
+
+
+    int somaPares500 = 0;
+    for (int i = 1; i <= 500; i++) {
+        if (i % 2 == 0) {
+            somaPares500 += i;
+        }
+    }
+    printf("\nSoma dos números pares de 1 a 500: %d\n", somaPares500);
+
+
+    int numero, somaParesUsuario = 0;
+
+    printf("Digite um número positivo: ");
+    scanf("%d", &numero);
+
+    for (int i = 1; i <= numero; i++) {
+        if (i % 2 == 0) {
+            somaParesUsuario += i;
+        }
+    }
+
+    printf("Soma dos números pares de 1 a %d: %d\n", numero, somaParesUsuario);
+
+    return 0;
+}
